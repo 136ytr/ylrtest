@@ -7,11 +7,15 @@ app = Flask(__name__)
 def index():
     return 'Hello!'
 
+@app.route('/video')
+def video():
+    return render_template("video.html")
+
 if __name__ == '__main__':
     yt = YouTube("http://www.youtube.com/watch?v=Ik-RsDGPI5Y")
     yt.set_filename('myFirstVideo')
     #video = yt.get('mp4','720p')
     video = yt.filter('.mp4')[-1]
-    video.download('/')
+    video.download('/templates')
     
     app.run(host='0.0.0.0', debug=True)
