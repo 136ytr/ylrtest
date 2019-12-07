@@ -1,6 +1,11 @@
 <!DOCTYPE html> 
-<html> 
+  <head>
+	  <title>Video</title>
+  </head>
+
   <body> 
-    <video controls autoplay src="myFirstVideo.mp4" ></video>
+    <video controls autoplay>
+        <source src={{url_for('static',filename="1.mp4")}} type="video/mp4">
+    </video>
   </body> 
 </html>
