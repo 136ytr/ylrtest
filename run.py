@@ -18,7 +18,7 @@ def video_yt():
     #yt.set_filename('myFirstVideo')
     #video = yt.get('mp4','720p')
     video = yt.streams.filter(file_extension='mp4').first()
-    video.download(output_path='/templates',filename='myFirstVideo')
+    video.download(output_path='/static',filename='myFirstVideo')
     #os.rename('/templates/'+yt.title+'.mp4','/templates/myFirstVideo.mp4')
     return render_template("yt.html")
 
