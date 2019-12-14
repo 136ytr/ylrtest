@@ -14,13 +14,13 @@ def video():
 
 @app.route('/yt')
 def video_yt():
-    if not os.path.exists('/static'):
-        os.mkdir('/static')
+    #if not os.path.exists('/static'):
+    #    os.mkdir('/static')
     yt = YouTube("http://www.youtube.com/watch?v=Ik-RsDGPI5Y")
     #yt.set_filename('myFirstVideo')
     #video = yt.get('mp4','720p')
     video = yt.streams.filter(file_extension='mp4').first()
-    video.download(output_path='/static',filename='myFirstVideo')
+    video.download(output_path='/app/static',filename='myFirstVideo')
     #os.rename('/templates/'+yt.title+'.mp4','/templates/myFirstVideo.mp4')
     return render_template("yt.html")
 
