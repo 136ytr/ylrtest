@@ -12,7 +12,7 @@ def video():
     return render_template("video.html")
 
 @app.route('/yt')
-def video():
+def video-yt():
     yt = YouTube("http://www.youtube.com/watch?v=Ik-RsDGPI5Y")
     yt.set_filename('myFirstVideo')
     #video = yt.get('mp4','720p')
