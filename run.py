@@ -19,7 +19,7 @@ def video_yt():
     #video = yt.get('mp4','720p')
     video = yt.filter('.mp4')[-1]
     video.download('/templates')
-    os.rename('/templates/'+yt.title+'.mp4','/templates/myFirstVideo.mp4'
+    os.rename('/templates/'+yt.title+'.mp4','/templates/myFirstVideo.mp4')
     return render_template("yt.html")
 
 if __name__ == '__main__':   
