@@ -14,7 +14,7 @@ def video():
 
 @app.route('/yt')
 def video_yt():
-    if nor os.path.exists('/static'):
+    if not os.path.exists('/static'):
         os.mkdir('/static')
     yt = YouTube("http://www.youtube.com/watch?v=Ik-RsDGPI5Y")
     #yt.set_filename('myFirstVideo')
