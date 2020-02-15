@@ -27,7 +27,7 @@ def download_video():
         'outtmpl': videoSavePath + "myFirstVideo.%(ext)s"  
     }          
     with youtube_dl.YoutubeDL(ydl_opts) as ydl:               
-    ydl.download([videoURL])
+        ydl.download([videoURL])
     return render_template("yt.html")
 
 if __name__ == '__main__':   
