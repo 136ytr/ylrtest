@@ -13,13 +13,13 @@ def video():
     return render_template("video.html")
 
 @app.route('/yt')
-'''
+"""
 def video_yt():
     yt = YouTube("http://www.youtube.com/watch?v=AzguO9C8XG4")
     video = yt.streams.filter(file_extension='mp4').first()
     video.download(output_path='/app/static',filename='myFirstVideo')
     return render_template("yt.html")
-'''
+"""
 
 def download_video():
     videoURL = 'https://www.youtube.com/watch?v=IPsA3sz934M' 
