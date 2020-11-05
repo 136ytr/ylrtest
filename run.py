@@ -17,11 +17,11 @@ def cqj():
     return render_template("cqj.html")
 
 @app.route('/ylr_in')
-def cqj():
+def ylr_in():
     return render_template("ylr_in.html")
 
 @app.route('/ylr_out')
-def cqj():
+def ylr_out():
     return render_template("ylr_out.html")
 
 @app.route('/yt')
