@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>验证结果</title>
+<style type="text/css">
+.l {
+	text-align: center;
+	font-size: 55px;
+}
+</style>
+</head>
+
+<body>
+<pre><img src={{url_for('static',filename="y2.png")}} width="1080" height="1806" />      <script> 	document.getElementById("demo").innerHTML=Date();   </script>   <span class="l"><em>
+</head>       
+</em></span></pre>
+<pre class="l" id="demo"><em>time</em></pre>
+
+	<script>
+		var myDate = new Date();
+		var m=myDate.getMonth()+1; 
+		var d=myDate.getDate(); 
+		var h=myDate.getHours(); 
+		var mm=myDate.getMinutes(); 
+
+		document.getElementById("demo").innerHTML="当前时间是："+m+"月"+d+"日 "+h+":"+mm;
+	</script>
+</body>
+</html>
