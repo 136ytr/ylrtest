@@ -16,6 +16,14 @@ def video():
 def cqj():
     return render_template("cqj.html")
 
+@app.route('/ylr_in')
+def cqj():
+    return render_template("ylr_in.html")
+
+@app.route('/ylr_out')
+def cqj():
+    return render_template("ylr_out.html")
+
 @app.route('/yt')
 #def video_yt():
     #yt = YouTube("http://www.youtube.com/watch?v=AzguO9C8XG4")
