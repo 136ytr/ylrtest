@@ -12,6 +12,10 @@ def home():
 def video():
     return render_template("video.html")
 
+@app.route('/cqj')
+def cqj():
+    return render_template("cqj.html")
+
 @app.route('/yt')
 #def video_yt():
     #yt = YouTube("http://www.youtube.com/watch?v=AzguO9C8XG4")
