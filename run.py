@@ -24,6 +24,10 @@ def ylr_in():
 def ylr_out():
     return render_template("ylr_out.html")
 
+@app.route('/ran')
+def ran1():
+    return render_template("ran.html")
+
 @app.route('/yt')
 #def video_yt():
     #yt = YouTube("http://www.youtube.com/watch?v=AzguO9C8XG4")
