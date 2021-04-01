@@ -6,7 +6,7 @@ app = Flask(__name__,static_folder='static')
 
 @app.route('/')
 def home():
-    return 'Hello!'
+    return render_template("index.html")
 
 @app.route('/video')
 def video():
