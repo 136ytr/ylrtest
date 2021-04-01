@@ -25,11 +25,11 @@ def ylr_out():
     return render_template("ylr_out.html")
 
 @app.route('/zhh_in')
-def ylr_in():
+def zhh_in():
     return render_template("zhh_in.html")
 
 @app.route('/zhh_out')
-def ylr_in():
+def zhh_out():
     return render_template("zhh_out.html")
 
 @app.route('/ran')
