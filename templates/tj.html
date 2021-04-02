@@ -1,0 +1,47 @@
+<!DOCTYPE html> 
+	<head>
+		<title>Video</title>
+	</head>
+
+	<body> 
+
+		<video controls autoplay id="vid" hidden onended="stop()" width="1080">
+			<source type="video/mp4">
+		</video>
+
+		<p style="text-align: center; font-size:160px">
+			<button onclick="ran()" autofocus style="text-align: center; font-size:60px" id="bt">开始</button>
+		</p>
+		
+		<script>
+			var aa=[];
+			var srcs=["12642/TmISOSWV/0.mp4","12643/jqgss29V/1.mp4","12645/GibF5PwG/2.mp4","12644/BvFKQ6Np/3.mp4","12640/6jiOxbvZ/4.mp4","12646/F0Bbo3a8/5.mp4","12647/8DhytFbd/6.mp4","12648/pdr3WKrf/7.mp4","12641/ZAGkrymH/8.mp4","12650/PAoMIL8L/9.mp4","12651/0mfT8W0G/10.mp4","12652/Mk4pXjQZ/11.mp4"];
+			for (var i=0; i<12; i++){
+   				var a;
+    				do{
+        					a=Math.ceil(Math.random()*1000000000%11);
+				}while(aa.includes(a))
+				aa[aa.length]=a;
+			}
+	
+			var x=0;
+
+			function ran(){
+				document.getElementById("bt").innerHTML="下一个";
+				document.getElementById("vid").hidden=false;
+				document.getElementById("vid").src="https://www.yunzhongzhuan.com/download/"+srcs[aa[x]];
+				document.getElementById("vid").load();
+				if(document.getElementById("vid").ended){
+					document.getElementById("v").hidden=true;
+				}
+				document.getElementById("vid").requestFullscreen();
+				x+=1;
+				x%=12;
+			}	
+
+			function stop(){
+				document.getElementById("vid").hidden=true;
+			}
+		</script>
+	</body> 
+</html>
