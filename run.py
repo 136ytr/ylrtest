@@ -36,6 +36,10 @@ def zhh_out():
 def ran1():
     return render_template("ran.html")
 
+@app.route('/tj')
+def tj():
+    return render_template("tj.html")
+
 @app.route('/yt')
 #def video_yt():
     #yt = YouTube("http://www.youtube.com/watch?v=AzguO9C8XG4")
