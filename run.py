@@ -38,7 +38,7 @@ def hxm_in():
 
 @app.route('/hjw_in')
 def hjw_in():
-    return render_template("hjw_in.html"
+    return render_template("hjw_in.html")
 
 @app.route('/ran')
 def ran1():
