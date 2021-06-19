@@ -36,6 +36,10 @@ def zhh_out():
 def hxm_in():
     return render_template("hxm_in.html")
 
+@app.route('/hjw_in')
+def hjw_in():
+    return render_template("hjw_in.html"
+
 @app.route('/ran')
 def ran1():
     return render_template("ran.html")
