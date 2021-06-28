@@ -13,7 +13,7 @@ def video():
     return render_template("video.html")
 
 @app.route('/<name>')
-def show():
+def show(name):
     return render_template(str(name)+".html")
                            
 @app.route('/cqj')
