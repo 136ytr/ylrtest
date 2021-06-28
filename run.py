@@ -16,8 +16,8 @@ def video():
 def show(name):
     try:
         return render_template(str(name)+".html")
-    except TemplateNotFound:
-        return render_template("index.html")
+    except Exception as e:
+        return e
                         
 @app.route('/cqj')
 def cqj():
