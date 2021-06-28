@@ -17,7 +17,7 @@ def video():
 def show(name):
     try:
         return render_template(str(name)+".html")
-    except TemplateNotFound:
+    except jinja2.exceptions.TemplateNotFound:
         return render_template("index.html")
                         
 @app.route('/cqj')
