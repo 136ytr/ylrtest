@@ -1,6 +1,7 @@
-from flask import Flask,render_template,jinja2
+from flask import Flask,render_template
 #from pytube import YouTube
 import youtube_dl
+from jinja2 import exceptions
 
 app = Flask(__name__,static_folder='static')
 
@@ -16,7 +17,7 @@ def video():
 def show(name):
     try:
         return render_template(str(name)+".html")
-    except jinja2.exceptions.TemplateNotFound:
+    except TemplateNotFound:
         return render_template("index.html")
                         
 @app.route('/cqj')
