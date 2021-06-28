@@ -17,7 +17,8 @@ def show(name):
     try:
         return render_template(str(name)+".html")
     except Exception as e:
-        return str(e)
+        print(traceback.format_exc())
+        return traceback.format_exc()
                         
 @app.route('/cqj')
 def cqj():
