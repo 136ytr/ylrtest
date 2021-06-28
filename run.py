@@ -1,7 +1,6 @@
 from flask import Flask,render_template
 #from pytube import YouTube
 import youtube_dl
-import traceback
 
 app = Flask(__name__,static_folder='static')
 
@@ -17,9 +16,8 @@ def video():
 def show(name):
     try:
         return render_template(str(name)+".html")
-    except Exception as e:
-        print(traceback.format_exc())
-        return traceback.format_exc()
+    except jinja2.exceptions.TemplateNotFound:
+        return render_template("index.html")
                         
 @app.route('/cqj')
 def cqj():
