@@ -18,7 +18,7 @@ def show(name):
     try:
         return render_template(str(name)+".html")
     except err.TemplateNotFound:
-        return render_template("index.html")
+        return render_template("404.html")
                         
 @app.route('/cqj')
 def cqj():
