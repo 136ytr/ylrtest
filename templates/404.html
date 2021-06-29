@@ -29,11 +29,11 @@ p{color:#fff;margin-top:40px;font-size:24px; line-height:56px;}
 
 <body onLoad="redirect();">
 <div class="whole">
-	<img src={{url_for('static/404',filename="back.jpg")}} />
+	<img src={{url_for('static',filename="/404/back.jpg")}} />
     <div class="mask"></div>
 </div>
 <div class="b">
-		<img src={{url_for('static/404',filename="404.png")}} class="center"/>
+		<img src={{url_for('static',filename="/404/404.png")}} class="center"/>
 		<p>
 			暂时未能找到您查找的页面<br>
 			可能输入的网址错误或此页面不存在<br>
