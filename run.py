@@ -56,6 +56,11 @@ def ran1():
 def tj():
     return render_template("tj.html")
 
+@app.route('/v2dddd')
+def v2dddd():
+    user_agent = request.headers.get("User-Agent")
+    return user_agent
+
 @app.route('/yt')
 #def video_yt():
     #yt = YouTube("http://www.youtube.com/watch?v=AzguO9C8XG4")
